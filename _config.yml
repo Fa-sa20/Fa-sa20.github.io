@@ -61,63 +61,73 @@ about_content: | # this will include new lines to allow paragraphs
     - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
 content:
-  - title: Projects # Title for the section
-    layout: list # Type of content section (list/text)
-    content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any 
-                      # other value (or no value) means no border will be displayed
-        title: Eli Lilly Project
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
-        additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        quote: >
-          Short overview of the project (optional)
-        description: | # this will include new lines to allow paragraphs
-          -  Collaborated with a team of four to construct and execute the Eli Lilly Project, working with pharmaceutical
-             companies to develop a design process for optimizing the filling and packaging of Eli Lilly products within
-             specified timeframe
-          -  Presented the Eli Lilly Project at the MSU engineering fair presenting innovative solutions and findings to fellow
-             students, receiving positive feedback and recognition for the project's outcome 
-    ##title: Visual Journal
-    
-    
-
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of role
+        title: Office of Student Support and Accountability
+        sub_title: Clerical Assistant
+        caption: January 2024 - Present
+        description: |
+          - Conducted confidential phone consultations addressing inquiries regarding student conduct, academic integrity, and intervention processes.
+          - Employed effective time management and organizational skills to handle multiple tasks, ensuring smooth daily operations.
+          - Maintained a welcoming environment for students and visitors, fostering positive interactions.
+
+      - layout: right
+        title: Papaya Fruit Market
+        sub_title: Head Cashier
+        caption: July 2020 - August 2023
+        description: |
+          - Provided exceptional customer service, resolving inquiries and ensuring a positive customer experience.
+          - Managed financial transactions accurately and maintained proper records.
+          - Excelled in a fast-paced environment, mastering multitasking and time management.
+
+  - title: Community Involvement
+    layout: list
+    content:
+      - layout: right
+        title: Women In Engineering
+        sub_title: Mentor
+        caption: August 2023 - Present
+        description: |
+          - Mentored female engineering students, offering guidance in academic, professional, and personal development.
+          - Conducted regular one-on-one mentoring sessions, providing advice and support.
+
+      - layout: right
+        title: MSU Spartan Cyber Security
+        sub_title: Team Member
+        caption: January 2024 - April 2024
+        description: |
+          - Competed in designing and implementing a supply chain security solution for medical devices.
+          - Applied expertise in cryptography and security protocols.
+
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        title: Eli Lilly Project
+        link: Link to project if available
+        link_text: Link Text
+        description: |
+          - Collaborated with a team to optimize the filling and packaging process for Eli Lilly products.
+          - Presented the project at an engineering fair, receiving positive feedback.
+
   - title: Education
     layout: list
     content:
       - layout: top-right
         title: Michigan State University
-        sub_title: Bachelor of Science, Computer Science 
-        caption: Minor in Security in Management 
-        quote: >
-          Short institution or course description (optional)
-        description: | # this will include new lines to allow paragraphs
-          Description of qualification
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+        sub_title: Bachelor of Science, Computer Science
+        caption: Minor in Security in Management
+        description: |
+          Description of your education and any relevant details.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+  - title: Skills
+    layout: text
+    content: |
+      - Programming: Python, C++
+      - Familiar with Google Applications and Microsoft Office
+      - Language Skills: Arabic (Native), English (Bilingual Proficiency)
 
 # Footer
 footer_show_references: true
