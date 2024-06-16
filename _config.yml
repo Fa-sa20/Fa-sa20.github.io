@@ -53,7 +53,7 @@ additional_links:
 about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: | # this will include new lines to allow paragraphs
   Hello! My name is Fatima Saad, I am a student at Michigan State University pursuing a bachalor in Computer Science as well as a minor in Secuity in Managment, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
-  testing
+  
   You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
     - Lists
     - Tables
@@ -67,7 +67,7 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
+        title: Eli Lilly Project
         link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
         link_text: Link Text
         additional_links:
@@ -80,7 +80,12 @@ content:
         quote: >
           Short overview of the project (optional)
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          -  Collaborated with a team of four to construct and execute the Eli Lilly Project, working with pharmaceutical
+             companies to develop a design process for optimizing the filling and packaging of Eli Lilly products within
+             specified timeframe
+          -  Presented the Eli Lilly Project at the MSU engineering fair presenting innovative solutions and findings to fellow
+             students, receiving positive feedback and recognition for the project's outcome 
+
   - title: Experience
     layout: list
     content:
