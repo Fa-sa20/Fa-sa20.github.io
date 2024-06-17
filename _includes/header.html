@@ -21,20 +21,48 @@ layout: default
                 <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
                     <nav>
                         <ul class="icons no-print">
-                            {% if site.github_username %}
+                            {%- if site.github_username -%}
                                 <li>
                                     <a target="_blank" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
                                         <i class="fab fa-github" title="Github link"></i>
                                     </a>
                                 </li>
-                            {% endif %}
-                            {% if site.linkedin_username %}
+                            {%- endif -%}
+                            {%- if site.linkedin_username -%}
                                 <li>
                                     <a target="_blank" href="https://www.linkedin.com/in/{{ site.linkedin_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
                                         <i class="fab fa-linkedin" title="LinkedIn link"></i>
                                     </a>
                                 </li>
-                            {% endif %}
+                            {%- endif -%}
+                            {%- if site.dribbble_username -%}
+                                <li>
+                                    <a target="_blank" href="https://dribbble.com/{{ site.dribbble_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                                        <i class="fab fa-dribbble-square" title="Dribble link"></i>
+                                    </a>
+                                </li>
+                            {%- endif -%}
+                            {%- if site.facebook_username -%}
+                                <li>
+                                    <a target="_blank" href="https://www.facebook.com/{{ site.facebook_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                                        <i class="fab fa-facebook" title="Facebook link"></i>
+                                    </a>
+                                </li>
+                            {%- endif -%}
+                            {%- if site.flickr_username -%}
+                                <li>
+                                    <a target="_blank" href="https://www.flickr.com/photos/{{ site.flickr_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                                        <i class="fab fa-flickr" title="Flickr link"></i>
+                                    </a>
+                                </li>
+                            {%- endif -%}
+                            {%- if site.instagram_username -%}
+                                <li>
+                                    <a target="_blank" href="https://www.instagram.com/{{ site.instagram_username | cgi_escape | escape }}" class="button button--sacnite button--round-l">
+                                        <i class="fab fa-instagram" title="Instagram link"></i>
+                                    </a>
+                                </li>
+                            {%- endif -%}
                         </ul>
                         <ul>
                             <li><a href="/projects.html">Projects</a></li>
@@ -130,5 +158,4 @@ layout: default
     </main>
 </body>
 </html>
-
 
