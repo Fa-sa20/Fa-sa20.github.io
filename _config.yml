@@ -1,117 +1,119 @@
 # Site
-repository: "sproogen/modern-resume-theme"
+repository: sproogen/modern-resume-theme
+
+# Content configuration version
+version: 2
 
 # Personal info
-name: "Fatima Saad"
-title: "Your job title"
-email: "your.email@example.com"
-phone: "Your phone number"
-website: "https://yourwebsite.com"
+name: Fatima Saad
+title: Your job title
+email: your.email@example.com
+phone: Your phone number
+website: https://yourwebsite.com
 
 # Dark Mode (true/false/never)
-darkmode: true
+darkmode: false
 
 # Social links
-github_username: "your-github-username"
-linkedin_username: "your-linkedin-username"
+twitter_username: jekyllrb
+github_username: jekyll
+stackoverflow_username: "00000001"
+dribbble_username: jekyll
+facebook_username: jekyll
+flickr_username: jekyll
+instagram_username: jekyll
+linkedin_username: jekyll
+xing_username: jekyll
+pinterest_username: jekyll
+youtube_username: jekyll
+orcid_username: 0000-0000-0000-0000
+googlescholar_username: D847cGsAAAAJ
+
+# Additional icon links
+additional_links:
+  - title: Link name
+    icon: fab fa-twitter
+    url: https://twitter.com/example
+  # Add more additional_links as needed
+
+# Google Analytics and Tag Manager
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
 
 # About Section
-about_profile_image: "images/profile.jpg"
-about_content: | # this will include new lines to allow paragraphs
+about_profile_image: images/profile.jpg
+about_content: |
   Hello! My name is Fatima Saad, I am a student at Michigan State University pursuing a bachelor in Computer Science as well as a minor in Security in Management.
 
+# Content sections
 content:
+  - title: Projects
+    layout: list
+    content:
+      - layout: left
+        border: weak
+        title: Project Name
+        link: https://example.com/project
+        link_text: Project Link
+        additional_links:
+          - title: GitHub Repository
+            icon: fab fa-github
+            url: https://github.com/example/project
+        quote: Short overview of the project
+        description: |
+          Detailed description of the project.
+
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: "Office of Student Support and Accountability"
-        sub_title: "Clerical Assistant"
-        caption: "January 2024 - Present"
+        title: Office of Student Support and Accountability
+        sub_title: Clerical Assistant
+        caption: January 2024 - Present
         description: |
           - Conducted confidential phone consultations addressing inquiries regarding student conduct, academic integrity, and intervention processes.
           - Employed effective time management and organizational skills to handle multiple tasks, ensuring smooth daily operations.
           - Maintained a welcoming environment for students and visitors, fostering positive interactions.
 
-      - layout: right
-        title: "Papaya Fruit Market"
-        sub_title: "Head Cashier"
-        caption: "July 2020 - August 2023"
-        description: |
-          - Provided exceptional customer service, resolving inquiries and ensuring a positive customer experience.
-          - Managed financial transactions accurately and maintained proper records.
-          - Excelled in a fast-paced environment, mastering multitasking and time management.
-
-  - title: Community Involvement
-    layout: list
-    content:
-      - layout: right
-        title: "Women In Engineering"
-        sub_title: "Mentor"
-        caption: "August 2023 - Present"
-        description: |
-          - Mentored female engineering students, offering guidance in academic, professional, and personal development.
-          - Conducted regular one-on-one mentoring sessions, providing advice and support.
-
-      - layout: right
-        title: "MSU Spartan Cyber Security"
-        sub_title: "Team Member"
-        caption: "January 2024 - April 2024"
-        description: |
-          - Competed in designing and implementing a supply chain security solution for medical devices.
-          - Applied expertise in cryptography and security protocols.
-
-  - title: Projects
-    layout: list
-    content:
-      - layout: left
-        title: "Eli Lilly Project"
-        link: "https://link-to-project.com"
-        link_text: "Link Text"
-        description: |
-          - Collaborated with a team to optimize the filling and packaging process for Eli Lilly products.
-          - Presented the project at an engineering fair, receiving positive feedback.
-
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: "Michigan State University"
-        sub_title: "Bachelor of Science, Computer Science"
-        caption: "Minor in Security in Management"
+        title: Michigan State University
+        sub_title: Bachelor of Science, Computer Science
+        caption: Minor in Security in Management
         description: |
-          - Description of your education and any relevant details.
+          Description of your education and any relevant details.
 
-  - title: Skills
+  - title: A Little More About Me
     layout: text
     content: |
-      - Programming: Python, C++
-      - Familiar with Google Applications and Microsoft Office
-      - Language Skills: Arabic (Native), English (Bilingual Proficiency)
+      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*.
 
 # Footer
 footer_show_references: true
 
 # Build settings
-remote_theme: "sproogen/modern-resume-theme"
+remote_theme: sproogen/modern-resume-theme
 
 sass:
-  sass_dir: _sass
-  style: compressed
+  sass that is compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
-  "Gemfile",
-  "Gemfile.lock",
-  "node_modules",
-  "vendor/bundle/",
-  "vendor/cache/",
-  "vendor/gems/",
-  "vendor/ruby/",
-  "lib/",
-  "scripts/",
-  "docker-compose.yml",
-]
+exclude : 
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - lib/
+  - scripts/
+  - docker-compose.yml
 
