@@ -1,7 +1,9 @@
 ---
 layout: page
-title: About Me
+title: About
+permalink: /about/
 ---
-# About Me
 
-Hello! My name is Fatima Saad. I am a student at Michigan State University pursuing a bachelor's in Computer Science and a minor in Security in Management.
+## About Me
+
+Hello! My name is {{ site.name }} and I am a {{ site.title }} at Michigan State University.
