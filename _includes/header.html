@@ -1,9 +1,13 @@
+---
+layout: default
+---
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Resume</title>
+    <title>{{ site.name | escape }}</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
@@ -33,10 +37,9 @@
                             {% endif %}
                         </ul>
                         <ul>
-                            <li><a href="/" class="active">Home</a></li>
                             <li><a href="/projects.html">Projects</a></li>
-                            <li><a href="/#education">Education</a></li>
-                            <li><a href="/#skills">Skills</a></li>
+                            <li><a href="#education">Education</a></li>
+                            <li><a href="#skills">Skills</a></li>
                         </ul>
                     </nav>
                 </div>
@@ -44,8 +47,88 @@
         </div>
     </header>
     <main>
-        <!-- Content for the Home Page -->
+        <section id="about">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <img src="{{ site.about_profile_image }}" alt="Profile Image">
+                <p>{{ site.about_content | markdownify }}</p>
+            </div>
+        </section>
+        
+        <!-- Include other sections using Liquid tags -->
+        {% for section in site.content %}
+            {% if section.title == "Experience" %}
+                <section id="experience">
+                    <h2>Experience</h2>
+                    <div class="experience-list">
+                        {% for entry in section.content %}
+                            <div class="experience-item">
+                                <h3>{{ entry.title }}</h3>
+                                <p class="sub-title">{{ entry.sub_title }}</p>
+                                <p class="caption">{{ entry.caption }}</p>
+                                <p>{{ entry.description | markdownify }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% elsif section.title == "Community Involvement" %}
+                <section id="community-involvement">
+                    <h2>Community Involvement</h2>
+                    <div class="community-list">
+                        {% for entry in section.content %}
+                            <div class="community-item">
+                                <h3>{{ entry.title }}</h3>
+                                <p class="sub-title">{{ entry.sub_title }}</p>
+                                <p class="caption">{{ entry.caption }}</p>
+                                <p>{{ entry.description | markdownify }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% elsif section.title == "Projects" %}
+                <section id="projects">
+                    <h2>Projects</h2>
+                    <div class="projects-list">
+                        {% for entry in section.content %}
+                            <div class="project-item">
+                                <h3>{{ entry.title }}</h3>
+                                {% if entry.link %}
+                                    <p><a href="{{ entry.link }}">{{ entry.link_text }}</a></p>
+                                {% endif %}
+                                <p>{{ entry.description | markdownify }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% elsif section.title == "Education" %}
+                <section id="education">
+                    <h2>Education</h2>
+                    <div class="education-list">
+                        {% for entry in section.content %}
+                            <div class="education-item">
+                                <h3>{{ entry.title }}</h3>
+                                <p class="sub-title">{{ entry.sub_title }}</p>
+                                <p class="caption">{{ entry.caption }}</p>
+                                <p>{{ entry.description | markdownify }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% elsif section.title == "Skills" %}
+                <section id="skills">
+                    <h2>Skills</h2>
+                    <div class="skills-list">
+                        {% for item in section.content | newline_to_br %}
+                            <div class="skills-item">
+                                <p>{{ item }}</p>
+                            </div>
+                        {% endfor %}
+                    </div>
+                </section>
+            {% endif %}
+        {% endfor %}
     </main>
 </body>
 </html>
+
 
