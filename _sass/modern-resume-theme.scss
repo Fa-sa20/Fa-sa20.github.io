@@ -43,8 +43,6 @@
 
 /* Icon bar at the top */
 .header-container {
-  background-color: #000;
-  color: #fff;
   padding: 20px 0;
   text-align: center;
 }
@@ -68,16 +66,17 @@
 
 .button--sacnite {
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #333; /* Adjust border color as needed */
+  color: #333; /* Adjust text color as needed */
 }
 
 .button--sacnite:hover {
-  background-color: #fff;
-  color: #000;
+  background-color: #333; /* Adjust hover background color as needed */
+  color: #fff; /* Adjust hover text color as needed */
 }
 
 .button--sacnite i {
   margin-right: 5px;
   font-size: 1.5rem;
 }
+
