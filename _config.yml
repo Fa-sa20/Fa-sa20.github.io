@@ -1,15 +1,12 @@
-# Site
-repository: sproogen/modern-resume-theme
-
 # Content configuration version
 version: 2
 
 # Personal info
-name: Fatima Saad
+name: Your Name
 title: Your job title
-email: your.email@example.com
-phone: Your phone number
-website: https://yourwebsite.com
+email: Your email (optional)
+phone: Your phone number (optional)
+website: Your website (eg. https://google.com) (optional)
 
 # Dark Mode (true/false/never)
 darkmode: false
@@ -29,22 +26,16 @@ youtube_username: jekyll
 orcid_username: 0000-0000-0000-0000
 googlescholar_username: D847cGsAAAAJ
 
-# Additional icon links
-additional_links:
-  - title: Link name
-    icon: fab fa-twitter
-    url: https://twitter.com/example
-  # Add more additional_links as needed
-
-# Google Analytics and Tag Manager
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
 # About Section
-about_profile_image: images/profile.jpg
+about_profile_image: Directory of profile image (eg. images/profile.jpg)
 about_content: |
-  Hello! My name is Fatima Saad, I am a student at Michigan State University pursuing a bachelor in Computer Science as well as a minor in Security in Management.
+  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+
+  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
+    - Lists
+    - Tables
+    - <a href="google.com">Links</a>
+    - Images ![alt text](/images/landscape-trees.jpg "Trees")
 
 # Content sections
 content:
@@ -53,67 +44,73 @@ content:
     content:
       - layout: left
         border: weak
-        title: Project Name
-        link: https://example.com/project
-        link_text: Project Link
+        title: Project name
+        link: Link to project (eg. sproogen.github.io/modern-resume-theme) (optional)
+        link_text: Link Text
         additional_links:
-          - title: GitHub Repository
+          - title: GitHub page for project (eg. sproogen/modern-resume-theme)
             icon: fab fa-github
-            url: https://github.com/example/project
-        quote: Short overview of the project
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme) (optional)
+          - title: GitHub page for project (eg. sproogen/modern-resume-theme)
+            icon: fab fa-github
+            url: Link to project (eg. sproogen.github.io/modern-resume-theme) (optional)
+        quote: >
+          Short overview of the project (optional)
         description: |
-          Detailed description of the project.
+          Description about the work on/with the project
 
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Office of Student Support and Accountability
-        sub_title: Clerical Assistant
-        caption: January 2024 - Present
+        title: Company name
+        sub_title: Job title
+        caption: Date Range (eg. November 2016 - present)
+        link: Link to company (optional)
+        quote: >
+          Short description of the company (optional)
         description: |
-          - Conducted confidential phone consultations addressing inquiries regarding student conduct, academic integrity, and intervention processes.
-          - Employed effective time management and organizational skills to handle multiple tasks, ensuring smooth daily operations.
-          - Maintained a welcoming environment for students and visitors, fostering positive interactions.
+          Description of role
 
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Michigan State University
-        sub_title: Bachelor of Science, Computer Science
-        caption: Minor in Security in Management
+        title: Institution name
+        sub_title: Qualifications (eg. BA Performing Arts)
+        caption: Date Range (eg. 2016 - 2019)
+        quote: >
+          Short institution or course description (optional)
         description: |
-          Description of your education and any relevant details.
+          Description of qualification
 
   - title: A Little More About Me
     layout: text
     content: |
       This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*.
+      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
 
 # Footer
 footer_show_references: true
 
 # Build settings
-remote_theme: sproogen/modern-resume-theme
-
 sass:
-  sass that is compressed
+  sass_dir: _sass
+  style: compressed
 
 plugins:
   - jekyll-seo-tag
 
-exclude : 
-  - Gemfile
-  - Gemfile.lock
-  - node_modules
-  - vendor/bundle/
-  - vendor/cache/
-  - vendor/gems/
-  - vendor/ruby/
-  - lib/
-  - scripts/
-  - docker-compose.yml
-
+exclude: [
+  - "Gemfile"
+  - "Gemfile.lock"
+  - "node_modules"
+  - "vendor/bundle/"
+  - "vendor/cache/"
+  - "vendor/gems/"
+  - "vendor/ruby/"
+  - "lib/"
+  - "scripts/"
+  - "docker-compose.yml"
+]
