@@ -1,46 +1,34 @@
-# Site
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# Site repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
 # favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
 
 # Content configuration version
 version: 2
 
 # Personal info
-name: Your Name
-title: Your job title
-email: Your email (optional)
+name: Fatima Saad
+title: Computer Science Student
+email: saadfat2@msu.edu
 # email_title: Email (Email title override)
-phone: Your phone number (optional)
+phone: (313) 398-9042
 # phone_title: Phone (Phone title override)
-website: Your website (eg. https://google.com)(optional)
+website: www.linkedin.com/in/fatima-saad-9276b726b
 # website_title: Web (Website title override)
 
 # Dark Mode (true/false/never)
-darkmode: false
+darkmode: true
 
 # Social links
-twitter_username: jekyllrb
-github_username:  jekyll
-stackoverflow_username: "00000001"
-dribbble_username: jekyll
-facebook_username: jekyll
-flickr_username: jekyll
-instagram_username: jekyll
-linkedin_username: jekyll
-xing_username: jekyll
-pinterest_username: jekyll
-youtube_username: jekyll
-orcid_username: 0000-0000-0000-0000
-googlescholar_username: D847cGsAAAAJ
+linkedin_username: fatima-saad-9276b726b
+github_username:  # Leave blank if not using
 
 # Additional icon links
 additional_links:
-- title: Link name
-  icon: Font Awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-  url: Link url (eg. https://google.com)
-# - title: another link
-#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#   url: Link url (eg. https://google.com)
+  - title: GitHub
+    icon: fab fa-github
+    url: https://github.com/yourusername
+#   - title: another link
+#     icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#     url: Link url (eg. https://google.com)
 
 # Google Analytics and Tag Manager
 # Using more than one of these may cause issues with reporting
@@ -67,49 +55,78 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
-        title: Project name
-        link: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-        link_text: Link Text
+        title: Eli Lilly Project
+        link: https://example.com/link-to-project
+        link_text: View Project
         additional_links:
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
+          - title: GitHub Repository
             icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
-          - title:  Github page for project (eg. sproogen/modern-resume-theme)
-            icon: fab fa-github
-            url: Link to project (eg. sproogen.github.io/modern-resume-theme)(optional)
+            url: https://github.com/yourusername/eli-lilly-project
         quote: >
-          Short overview of the project (optional)
+          Collaborated with a team to optimize the filling and packaging process for Eli Lilly products.
         description: | # this will include new lines to allow paragraphs
-          Description about the work on/with the project
+          Presented the project at an engineering fair, receiving positive feedback.
+
   - title: Experience
     layout: list
     content:
       - layout: right
-        title: Company name
-        sub_title: Job title
-        caption: Date Range (eg. November 2016 - present)
-        link: Link to company (optional)
-        quote: >
-          Short description of the company (optional)
+        title: Office of Student Support and Accountability
+        sub_title: Clerical Assistant
+        caption: January 2024 - Present
         description: | # this will include new lines to allow paragraphs
-          Description of role
+          Conducted confidential phone consultations addressing inquiries regarding student conduct, academic integrity, and intervention processes.
+          Employed effective time management and organizational skills to efficiently handle multiple tasks, such as answering phones, greeting visitors, and completing administrative duties, ensuring smooth daily operations.
+          Maintained a welcoming and supportive environment for students and visitors, fostering positive interactions and contributing to a sense of community within the office space.
+
+      - layout: right
+        title: Papaya Fruit Market
+        sub_title: Head Cashier
+        caption: July 2020 - August 2023
+        description: | # this will include new lines to allow paragraphs
+          Displayed exceptional customer service skills by providing friendly and helpful assistance to customers, resolving inquiries, and ensuring a positive experience for all customers.
+          Developed strong organizational abilities to manage financial transactions accurately and maintain proper records, showcasing attention to detail and reliability.
+          Excelled in a fast-paced environment, mastering multitasking, and time management skills.
+
+  - title: Community Involvement
+    layout: list
+    content:
+      - layout: right
+        title: Women In Engineering
+        sub_title: Mentor
+        caption: August 2023 - Present
+        description: | # this will include new lines to allow paragraphs
+          Mentored female engineering students at Michigan State University, offering guidance and support in academic, professional, and personal development.
+          Conducted regular one-on-one mentoring sessions, actively listening to students' concerns, providing advice, and sharing personal experiences to inspire mentees.
+          Offered support and assistance to help mentees navigate their first year at the university, resulting in an increase in academic and confidence levels.
+
+      - layout: right
+        title: MSU Spartan Cyber Security
+        sub_title: Team Member
+        caption: January 2024 - April 2024
+        description: | # this will include new lines to allow paragraphs
+          Competed with a competitive team in designing and implementing a supply chain security solution for microcontrollers on medical devices, addressing concerns regarding device integrity while keeping information confidential.
+          Applied expertise in public key cryptography, TLS protocols, and attack-resistant design codes to ensure system integrity and data confidentiality.
+          Played a key role in achieving recognition as a top 10 contender among competing teams, showcasing proficiency in design and attack implementations.
+
   - title: Education
     layout: list
     content:
       - layout: top-right
-        title: Institution name
-        sub_title: Qualifications (eg. BA Performing Arts)
-        caption: Date Range (eg. 2016 - 2019)
-        quote: >
-          Short institution or course description (optional)
+        title: Michigan State University
+        sub_title: Bachelor of Science, Computer Science
+        caption: May 2026
         description: | # this will include new lines to allow paragraphs
-          Description of qualification
-  - title: A Little More About Me
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      This is where you can write a little more about yourself. You could title this section **Interests** and include some of your other interests.
+          Minor in Security in Management
 
-      Or you could title it **Skills** and write a bit more about things that make you more desirable, like *leadership* or *teamwork*
+  - title: Skills
+    layout: list
+    content:
+      - layout: left
+        description: | # this will include new lines to allow paragraphs
+          - Programming: Python, C++
+          - Familiar with Google Applications (Google Docs, Slides), Microsoft Office (Word, Excel)
+          - Languages: Arabic - Native, English - Bilingual Proficiency
 
 # Footer
 footer_show_references: true
@@ -137,4 +154,4 @@ exclude : [
   "lib/",
   "scripts/",
   "docker-compose.yml",
-  ]
+]
