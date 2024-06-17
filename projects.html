@@ -4,26 +4,91 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projects - My Resume</title>
-    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 20px;
+        }
+        header {
+            text-align: center;
+            padding: 20px 0;
+            border-bottom: 2px solid #333;
+            margin-bottom: 40px;
+        }
+        main {
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        h2 {
+            font-size: 24px;
+            border-bottom: 2px solid #333;
+            padding-bottom: 10px;
+            margin-bottom: 20px;
+        }
+        .project {
+            margin-bottom: 40px;
+        }
+        .project h3 {
+            font-size: 24px;
+            font-weight: bold;
+            margin: 0;
+        }
+        .project .date {
+            font-size: 14px;
+            margin: 5px 0;
+            color: #ccc;
+        }
+        .project ul {
+            list-style-type: disc;
+            padding-left: 20px;
+        }
+        hr {
+            border: 0;
+            border-top: 1px solid #333;
+            margin: 40px 0;
+        }
+    </style>
 </head>
 <body>
     <header>
-        <h1>My Resume</h1>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="projects.html" class="active">Projects</a></li>
-                <li><a href="education.html">Education</a></li>
-                <li><a href="skills.html">Skills</a></li>
-            </ul>
-        </nav>
+        <h1>My Projects</h1>
     </header>
     <main>
         <section id="projects" class="tab-content active">
             <h2>Projects</h2>
-            <p>Details about projects go here.</p>
+
+            <div class="project">
+                <h3>Eli Lilly Project</h3>
+                <p class="date">Date: January 2024 - Present</p>
+                <ul>
+                    <li>Collaborated with a team to optimize the filling and packaging process for Eli Lilly products.</li>
+                    <li>Presented the project at an engineering fair, receiving positive feedback.</li>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="project">
+                <h3>Project Title 2</h3>
+                <p class="date">Date: Month Year - Month Year</p>
+                <ul>
+                    <li>Detail about the project.</li>
+                    <li>Another detail about the project.</li>
+                </ul>
+            </div>
+            <hr>
+
+            <div class="project">
+                <h3>Project Title 3</h3>
+                <p class="date">Date: Month Year - Month Year</p>
+                <ul>
+                    <li>Detail about the project.</li>
+                    <li>Another detail about the project.</li>
+                </ul>
+            </div>
         </section>
     </main>
-    <script src="script.js"></script>
 </body>
 </html>
