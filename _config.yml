@@ -26,13 +26,7 @@ about_content: |
   Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/fatima-saad-9276b726b) or check out my projects on [GitHub](https://github.com/yourusername).
 
 # Content sections
-content:
-  - title: About Me
-    layout: list
-    content:
-      - layout: left
-        description: |
-          - I am Fatima Saad, a passionate and dedicated Computer Science student currently pursuing my Bachelor of Science degree at Michigan State University.
+
 
 # Build settings
 sass:
