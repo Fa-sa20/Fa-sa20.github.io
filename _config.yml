@@ -1,6 +1,3 @@
-repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-
 # Content configuration version
 version: 2
 
@@ -8,36 +5,14 @@ version: 2
 name: Fatima Saad
 title: Computer Science Student
 email: saadfat2@msu.edu
-# email_title: Email (Email title override)
 phone: (313) 398-9042
-# phone_title: Phone (Phone title override)
-#website: www.linkedin.com/in/fatima-saad-9276b726b
-# website_title: Web (Website title override)
-
-# Dark Mode (true/false/never)
 darkmode: true
 
 # Social links
 linkedin_username: fatima-saad-9276b726b
 github_username:  # Leave blank if not using
 
-# Additional icon links
-additional_links:
-  - title: GitHub
-    icon: fab fa-github
-    url: https://github.com/yourusername
-#   - title: another link
-#     icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#     url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
 # About Section
-# about_title: About Me (Use this to override about section title)
 about_profile_image: images/headshot.jpeg
 about_content: |
   I am Fatima Saad, a passionate and dedicated Computer Science student currently pursuing my Bachelor of Science degree at Michigan State University. With a strong foundation in programming languages such as Python and C++, I am eager to apply my skills in various projects and internships.
@@ -52,100 +27,26 @@ about_content: |
 
 # Content sections
 content:
-  - title: Projects
-    layout: list
-    content:
-      - layout: left
-        border: weak
-        title: Eli Lilly Project
-        link: https://example.com/link-to-project
-        link_text: View Project
-        additional_links:
-          - title: GitHub Repository
-            icon: fab fa-github
-            url: https://github.com/yourusername/eli-lilly-project
-        quote: >
-          Collaborated with a team to optimize the filling and packaging process for Eli Lilly products.
-        description: |
-          Presented the project at an engineering fair, receiving positive feedback.
-
-  - title: Experience
-    layout: list
-    content:
-      - layout: right
-        title: Office of Student Support and Accountability
-        sub_title: Clerical Assistant
-        caption: January 2024 - Present
-        description: |
-          Conducted confidential phone consultations addressing inquiries regarding student conduct, academic integrity, and intervention processes.
-          Employed effective time management and organizational skills to efficiently handle multiple tasks, such as answering phones, greeting visitors, and completing administrative duties, ensuring smooth daily operations.
-          Maintained a welcoming and supportive environment for students and visitors, fostering positive interactions and contributing to a sense of community within the office space.
-
-      - layout: right
-        title: Papaya Fruit Market
-        sub_title: Head Cashier
-        caption: July 2020 - August 2023
-        description: |
-          Displayed exceptional customer service skills by providing friendly and helpful assistance to customers, resolving inquiries, and ensuring a positive experience for all customers.
-          Developed strong organizational abilities to manage financial transactions accurately and maintain proper records, showcasing attention to detail and reliability.
-          Excelled in a fast-paced environment, mastering multitasking, and time management skills.
-
-  - title: Community Involvement
-    layout: list
-    content:
-      - layout: right
-        title: Women In Engineering
-        sub_title: Mentor
-        caption: August 2023 - Present
-        description: |
-          Mentored female engineering students at Michigan State University, offering guidance and support in academic, professional, and personal development.
-          Conducted regular one-on-one mentoring sessions, actively listening to students' concerns, providing advice, and sharing personal experiences to inspire mentees.
-          Offered support and assistance to help mentees navigate their first year at the university, resulting in an increase in academic and confidence levels.
-
-      - layout: right
-        title: MSU Spartan Cyber Security
-        sub_title: Team Member
-        caption: January 2024 - April 2024
-        description: |
-          Competed with a competitive team in designing and implementing a supply chain security solution for microcontrollers on medical devices, addressing concerns regarding device integrity while keeping information confidential.
-          Applied expertise in public key cryptography, TLS protocols, and attack-resistant design codes to ensure system integrity and data confidentiality.
-          Played a key role in achieving recognition as a top 10 contender among competing teams, showcasing proficiency in design and attack implementations.
-
-  - title: Education
-    layout: list
-    content:
-      - layout: top-right
-        title: Michigan State University
-        sub_title: Bachelor of Science, Computer Science
-        caption: May 2026
-        description: |
-          Minor in Security in Management
-
-  - title: Skills
+  - title: About Me
     layout: list
     content:
       - layout: left
         description: |
-          - Programming: Python, C++
-          - Familiar with Google Applications (Google Docs, Slides), Microsoft Office (Word, Excel)
-          - Languages: Arabic - Native, English - Bilingual Proficiency
-
-# Footer
-footer_show_references: true
-# references_title: References on request (Override references text)
+          - I am Fatima Saad, a passionate and dedicated Computer Science student currently pursuing my Bachelor of Science degree at Michigan State University.
+          - Strong foundation in programming languages such as Python and C++.
+          - Actively involved in community initiatives like Women In Engineering and MSU Spartan Cyber Security.
+          - Professional experience includes roles as Clerical Assistant and Head Cashier.
+          - Fluent in Arabic and English.
 
 # Build settings
-# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
-# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
-
 sass:
   sass_dir: _sass
   style: compressed
 
 plugins:
- - jekyll-seo-tag
+  - jekyll-seo-tag
 
-exclude : [
+exclude: [
   "Gemfile",
   "Gemfile.lock",
   "node_modules",
@@ -157,3 +58,4 @@ exclude : [
   "scripts/",
   "docker-compose.yml",
 ]
+
