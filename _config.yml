@@ -33,10 +33,6 @@ content:
       - layout: left
         description: |
           - I am Fatima Saad, a passionate and dedicated Computer Science student currently pursuing my Bachelor of Science degree at Michigan State University.
-          - Strong foundation in programming languages such as Python and C++.
-          - Actively involved in community initiatives like Women In Engineering and MSU Spartan Cyber Security.
-          - Professional experience includes roles as Clerical Assistant and Head Cashier.
-          - Fluent in Arabic and English.
 
 # Build settings
 sass:
