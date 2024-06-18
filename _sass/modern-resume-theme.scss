@@ -50,10 +50,10 @@
   box-shadow: inset 0 0 20px #636161;
 }
 
-
 /* Icon bar at the top */
 .header-container {
   padding: 20px 0;
+  background-color: #000; /* Set black background */
   text-align: left; /* Align text and icons to the left */
 }
 
@@ -72,7 +72,7 @@
 
 .button {
   min-width: auto;
-  padding: 10px 20px;
+  padding: 20px; /* Increase padding for bigger circles */
   font-size: 1.2rem;
 }
 
@@ -80,6 +80,12 @@
   background-color: transparent;
   border: 2px solid #333; /* Adjust border color as needed */
   color: #333; /* Adjust text color as needed */
+  border-radius: 50%; /* Ensure the button is round */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px; /* Set fixed width for circle */
+  height: 60px; /* Set fixed height for circle */
 }
 
 .button--sacnite:hover {
@@ -88,6 +94,6 @@
 }
 
 .button--sacnite i {
-  margin-right: 5px;
   font-size: 1.5rem;
+  line-height: 0;
 }
