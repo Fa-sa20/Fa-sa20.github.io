@@ -53,8 +53,8 @@
 /* Icon bar at the top */
 .header-container {
   padding: 20px 0;
-  background-color: #000; /* Set black background */
-  text-align: left; /* Align text and icons to the left */
+  background-color: #fff; /* Set white background */
+  text-align: center; /* Align text and icons to the center */
 }
 
 .icons {
@@ -63,12 +63,12 @@
   margin: 0;
   display: flex; /* Ensure icons are aligned horizontally */
   align-items: center; /* Center icons vertically within the container */
-  justify-content: flex-start; /* Align icons from left to right */
+  justify-content: center; /* Align icons from left to right */
   width: 100%; /* Occupy full width of parent container */
 }
 
 .icons li {
-  margin-right: 30px; /* Adjust spacing between icons */
+  margin-right: 20px; /* Adjust spacing between icons */
 }
 
 .button {
@@ -76,39 +76,37 @@
   padding: 25px; /* Increase padding for bigger circles */
   font-size: 1.2rem;
   position: relative; /* Ensure position relative for pseudo element */
+  display: inline-block;
+  text-align: center; /* Center text inside the button */
 }
 
 .button--sacnite {
-  background-color: transparent;
-  border: 2px solid #333; /* Adjust border color as needed */
-  color: #333; /* Adjust text color as needed */
+  background-color: #000; /* Black background */
+  border: none; /* Remove border */
+  color: #fff; /* White text color */
   border-radius: 50%; /* Ensure the button is round */
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 100px; /* Set fixed width for circle */
-  height: 100px; /* Set fixed height for circle */
+  width: 120px; /* Set fixed width for circle */
+  height: 120px; /* Set fixed height for circle */
   position: relative; /* Ensure position relative for pseudo element */
-}
-
-.button--sacnite::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  border-radius: inherit;
-  background-color: #000; /* Black background */
-  z-index: -1;
+  text-decoration: none; /* Remove underline */
+  transition: all 0.3s ease; /* Smooth transition */
 }
 
 .button--sacnite:hover {
+  background-color: #333; /* Darken background on hover */
   color: #fff; /* Adjust hover text color as needed */
 }
 
 .button--sacnite i {
-  font-size: 2rem; /* Adjust icon size */
-  line-height: 0;
+  font-size: 3rem; /* Adjust icon size */
+  line-height: 1; /* Ensure proper vertical alignment */
+}
+
+.button--sacnite span {
+  display: block; /* Ensure text wraps properly */
+  margin-top: 10px; /* Adjust spacing between icon and text */
 }
 
