@@ -1,53 +1,18 @@
-# Site repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
-# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
-
-# Content configuration version
-version: 2
-
-# Personal info
-name: Fatima Saad
-title: Computer Science Student
-email: saadfat2@msu.edu
-# email_title: Email (Email title override)
-phone: (313) 398-9042
-# phone_title: Phone (Phone title override)
-website: www.linkedin.com/in/fatima-saad-9276b726b
-# website_title: Web (Website title override)
-
-# Dark Mode (true/false/never)
-darkmode: true
-
-# Social links
-linkedin_username: fatima-saad-9276b726b
-github_username:  # Leave blank if not using
-
-# Additional icon links
-additional_links:
-  - title: GitHub
-    icon: fab fa-github
-    url: https://github.com/yourusername
-#   - title: another link
-#     icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
-#     url: Link url (eg. https://google.com)
-
-# Google Analytics and Tag Manager
-# Using more than one of these may cause issues with reporting
-# gtm: "GTM-0000000"
-# gtag: "UA-00000000-0"
-# google_analytics: "UA-00000000-0"
-
 # About Section
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/headshot.jpeg
 about_content: | # this will include new lines to allow paragraphs
-  Write an awesome description about yourself here, this supports markdown, so you can add [links](http://foobar.com) and highlight things <mark>like this</mark>.
+  I am Fatima Saad, a passionate and dedicated Computer Science student currently pursuing my Bachelor of Science degree at Michigan State University. With a strong foundation in programming languages such as Python and C++, I am eager to apply my skills in various projects and internships.
 
-  You can even add paragraphs by using empty lines like this and add anything else [markdown](https://www.markdownguide.org/getting-started#what-is-markdown) supports such as
-    - Lists
-    - Tables
-    - <a href="google.com">Links</a>
-    - Images ![alt text](/images/landscape-trees.jpg "Trees")
+  Throughout my academic journey, I have developed a keen interest in security management, which is reflected in my minor. I am actively involved in community initiatives such as the Women In Engineering program, where I mentor fellow female engineering students, and the MSU Spartan Cyber Security team, where I contributed to designing a secure supply chain solution for medical devices.
 
+  My professional experiences include working as a Clerical Assistant at the Office of Student Support and Accountability, where I honed my organizational and time management skills, and as the Head Cashier at Papaya Fruit Market, where I developed exceptional customer service abilities.
+
+  I am fluent in both Arabic and English, which has allowed me to engage with diverse communities and foster inclusive environments. My goal is to leverage my technical and interpersonal skills to make a meaningful impact in the field of computer science.
+
+  Feel free to connect with me on [LinkedIn](https://www.linkedin.com/in/fatima-saad-9276b726b) or check out my projects on [GitHub](https://github.com/yourusername).
+
+# Content sections
 content:
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -155,3 +120,4 @@ exclude : [
   "scripts/",
   "docker-compose.yml",
 ]
+
