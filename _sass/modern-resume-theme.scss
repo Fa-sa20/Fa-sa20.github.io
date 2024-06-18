@@ -63,6 +63,7 @@
   margin: 0;
   display: flex; /* Ensure icons are aligned horizontally */
   align-items: center; /* Center icons vertically within the container */
+  justify-content: flex-start; /* Align icons from left to right */
   width: 100%; /* Occupy full width of parent container */
 }
 
@@ -72,8 +73,9 @@
 
 .button {
   min-width: auto;
-  padding: 20px; /* Increase padding for bigger circles */
+  padding: 25px; /* Increase padding for bigger circles */
   font-size: 1.2rem;
+  position: relative; /* Ensure position relative for pseudo element */
 }
 
 .button--sacnite {
@@ -84,16 +86,29 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 60px; /* Set fixed width for circle */
-  height: 60px; /* Set fixed height for circle */
+  width: 100px; /* Set fixed width for circle */
+  height: 100px; /* Set fixed height for circle */
+  position: relative; /* Ensure position relative for pseudo element */
+}
+
+.button--sacnite::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: inherit;
+  background-color: #000; /* Black background */
+  z-index: -1;
 }
 
 .button--sacnite:hover {
-  background-color: #333; /* Adjust hover background color as needed */
   color: #fff; /* Adjust hover text color as needed */
 }
 
 .button--sacnite i {
-  font-size: 1.5rem;
+  font-size: 2rem; /* Adjust icon size */
   line-height: 0;
 }
+
